@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+@import "../../node_modules//bootstrap/scss/bootstrap-reboot.scss";
+@import "../../node_modules//bootstrap/scss/bootstrap-grid.scss";
+@import "../../node_modules//bootstrap/scss/_forms.scss";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #000;
+}
+
+// p {
+//   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+//   font-style: italic;
+//   font-weight: 400;
+//   line-height: 71px;
+// }
+
+.row {
+  //   width: 1322px;
+}
+
+.col-2,
+.col-3,
+.col-6,
+.col-8,
+.col-4,
+.col {
+  padding: 0;
+}
+
+.col-sm-10 {
+  padding-top: 5px;
+  margin-bottom: 20px;
+}
+
+//_____________________________________________
+//Header block
+
+.header {
+  height: 105px;
+  display: flex;
+  align-items: center;
+}
+
+.header_logo {
+  img {
+    width: 179px;
+    height: 51px;
+    left: 299px;
+    top: 30px;
+  }
+}
+
+.header_nav {
+  text-align: center;
+  a {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #000000;
+    margin-right: 22px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.wrapper_top {
+  height: 768px;
+  background-color: #2ecc71;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.header_links {
+  display: flex;
+  justify-content: flex-end;
+  .links_item {
+    display: inline-block;
+    margin-right: 5.5px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+//_____________________________________________
+//Private block
+
+.private {
+  display: flex;
+  align-items: center;
+}
+
+.private_header {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 71px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.private_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.private_button {
+  width: 255px;
+  height: 56px;
+  background-color: #252525;
+  border: 4px solid #252525;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  transition: all ease-in 0.5s;
+  &:hover {
+    background-color: #2ecc71;
+    color: #252525;
+  }
+}
+
+.private_img {
+  img {
+    width: 614px;
+    height: 656px;
+    margin-left: 120px;
+  }
+}
+
+//_____________________________________________
+//Securities block
+
+.securities_head {
+  text-align: center;
+
+  p {
+    width: 935px;
+    margin: 0 auto 30px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 34px;
+    text-align: center;
+    color: #000000;
+  }
+}
+.body_item {
+  text-align: center;
+  img {
+    margin-bottom: 30px;
+    height: 335px;
+  }
+  h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: #000000;
+  }
+  p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+.securities_body {
+  margin-bottom: 54px;
+}
+
+.securities_mail {
+  margin-bottom: 49px;
+  text-align: center;
+  input {
+    margin-right: 20px;
+    border: 1px solid rgba(150, 150, 150, 1);
+  }
+  button {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    border: 4px solid #2ecc71;
+    background-color: #2ecc71;
+    color: #ffffff;
+    transition: all ease-in 0.5s;
+    &:hover {
+      background-color: #fff;
+      color: #2ecc71;
+    }
+  }
+  input,
+  button {
+    width: 316px;
+    height: 47px;
+    border-radius: 5px;
+  }
+}
+
+//_____________________________________________
+//wrapper_middle block
+
+.wrapper_middle {
+  height: 181px;
+  background-color: #252525;
+  margin-bottom: 43px;
+  .container {
+    .row {
+      height: 181px;
+      width: 694px;
+      margin: 0 auto;
+      p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 44px;
+        text-align: center;
+        color: #2fcc71;
+      }
+    }
+  }
+}
+
+//_____________________________________________
+//products block
+
+.products_col {
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 61px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+}
+
+.products_h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #252525;
+  margin-bottom: 10px;
+}
+.products_p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 74px;
+}
+.products_p:first-child {
+}
+.products_h2-green {
+  color: #2ecc71;
+}
+
+.products_img {
+  height: 667px;
+  width: 346px;
+  margin-bottom: 26.5px;
+  img {
+    height: 667px;
+    width: 346px;
+  }
+}
+
+//______________________________________
+// business block
+
+.wrapper_business {
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 1000px;
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+}
+
+.business_row {
+  margin: 0 auto 20px;
+}
+.business_block {
+  width: 20px;
+}
+.buisness-col {
+  text-align: center;
+  border: 1px solid rgba(46, 204, 113, 1);
+  border-radius: 5px;
+  width: 418px;
+  h1 {
+    margin-top: 90px;
+  }
+}
+.buisness-col:not(:last-child) {
+  margin-right: 20px;
+}
+.business_icon {
+  margin: 49px 0 22px 0;
+}
+.buisness__block-text_bold {
+  margin-bottom: 22px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: center;
+  color: #000000;
+}
+.buisness__block-text {
+  font-style: normal;
+  margin: 0 auto 50px;
+  width: 262px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+//__________________________
+// blog block
+
+.blog_icon {
+  margin-bottom: 14px;
+}
+
+.info__date {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+.info__text {
+  font-style: normal;
+  width: 350px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.blog_col {
+  text-align: center;
+  margin: 0 auto;
+}
+.blog_row {
+  margin-bottom: 30px;
+}
+
+.blog_button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  width: 255px;
+  height: 56px;
+  line-height: 27px;
+  text-align: center;
+  border: 4px solid #2ecc71;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #2ecc71;
+  margin-bottom: 34px;
+  transition: all ease-in 0.5s;
+  &:hover {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+}
+
+//_______________________________________
+// contact us
+.wrapper_bottom {
+  height: 495px;
+  background-color: #e5e5e5;
+}
+
+.contact_row {
+  height: 495px;
+}
+.contact_header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 61px;
+  margin-bottom: 8px;
+}
+.contact_text {
+  width: 375px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+.contact_text-mail {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #2ecc71;
+}
+
+.contact__form__label {
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.contact_button {
+  width: 160px;
+  height: 43px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  background-color: #252525;
+  border-radius: 5px;
+  transition: all ease-in 0.5s;
+  float: right;
+  margin-top: 27px;
+  &:hover {
+    background-color: #fff;
+    color: #252525;
+  }
+}
+
+//____________________
+//footer block
+.wrapper_footer {
+  height: 370px;
+  background-color: #252525;
+}
+
+.footer_links{
+  div{
+    display: inline-block;
+  }
+}
+
+//______________________________________
+// общие заголовки
+.h1_header {
+  font-style: normal;
+  margin: 17px 0 30px 0;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 61px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.h1_header-business {
+  margin-top: 90px;
+}
+
