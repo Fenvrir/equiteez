@@ -10,220 +10,235 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header_logo col-2">
-                <img src="images/logo.svg" alt="Logo">
-            </div>
-            <nav class="header_nav col-8">
-                <a href="#">What Are Digital Securities?</a>
-                <a href="#">Products</a>
-                <a href="#">Digitize Your Business</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact Us</a>
-            </nav>
-            <div class="header_links col-2">
-                <div class="links_item"> <img src="images/twitter.svg" alt="Twitter"></div>
-                <div class="links_item"> <img src="images/facebook.svg" alt="Facebook"></div>
-                <div class="links_item"> <img src="images/linkedin.svg" alt="LinkedIn"></div>
-                <div class="links_item"> <img src="images/medium.svg" alt="Medium"></div>
-            </div>
-        </header>
-    </div>
-    <div class="wrapper wrapper_top">
-        <div class="container">
-            <div class="private row">
-                <div class="private_col col-6">
-                    <h1 class="private_header">Private Equity Made Easy</h1>
-                    <p class="private_text">Equiteez is on a mission to make private equity easily accesible to all in
-                        vestors</p>
-                    <button class="private_button">Signup For Free</button>
+    <div class="wrapper__header">
+            <header class="header container">
+                <div class="header__logo col-2">
+                    <img class="logo__img" src="images/logo.svg" alt="Logo">
                 </div>
+                <nav class="nav-menu col-8">
+                    <ul class="nav-menu__list">
+                        <li class="list__item"><a class="item__link" href="#securities">What Are DigitalSecurities?</a></li>
+                        <li class="list__item"><a class="item__link" href="#products">Products</a></li>
+                        <li class="list__item"><a class="item__link" href="#business">Digitize Your Business</a></li>
+                        <li class="list__item"><a class="item__link" href="#blog">Blog</a></li>
+                        <li class="list__item"><a class="item__link" href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header__links col-2 ">
+                    <div class="links__item"> <a href="" target="_blank"><img class="link__img" src="images/links/twitter.svg"
+                                alt="Twitter"></div></a>
+                    <div class="links__item"> <a href="" target="_blank"><img class="link__img" src="images/links/facebook.svg"
+                                alt="Facebook"></div></a>
+                    <div class="links__item"> <a href="" target="_blank"><img class="link__img" src="images/links/linkedin.svg"
+                                alt="LinkedIn"></div></a>
+                    <div class="links__item"> <a href="" target="_blank"><img class="link__img" src="images/links/medium.svg"
+                                alt="Medium"></div></a>
+                </div>
+            </header>
+    </div>
+    <div id="private" class="wrapper wrapper__private">
+        <div class="container">
+            <div class="private row align-items-center">
                 <div class="private_col col-6">
-                    <div class="private_img">
-                        <img src="./images/phone.svg" alt="Phone">
+                    <h1 class="private__title">Private Equity Made Easy</h1>
+                    <p class="private__text">Equiteez is on a mission to make private equity easily accesible to all in
+                        vestors</p>
+                    <button class="button-private button-shadow">Signup For Free</button>
+                </div>
+                <div class="col-1"></div>
+                <div class="private__col col-5">
+                    <div class="private__img">
+                        <img class="private-img-phone" src="./images/phone.svg" alt="Phone">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="securities container">
-        <div class="securities_head row">
-            <h1 class="h1_header">What Are Digital Securities?</h1>
-            <p>Digital securities represent traditional assets like equity or bonds.
+    <div id="securities" class="securities container">
+        <div class="securities-head row">
+            <h1 class="securities-head__title title">What Are Digital Securities?</h1>
+            <p class="securities-head__text">Digital securities represent traditional assets like equity or bonds.
                 They carry all of the same legal rights of their paper issued counter-parts.</p>
         </div>
-        <div class="securities_body row">
-            <div class="body_item col-4">
-                <img src="./images/secure1.svg" alt="">
-                <h2>Invest Any Amount </h2>
-                <p>Start with as little as $1,
+        <div class="securities-body row">
+            <div class="body__item col-4">
+                <img class="item__img" src="./images/secure/secure1.svg" alt="">
+                <h2 class="item__tite">Invest Any Amount </h2>
+                <p class="item__text">Start with as little as $1,
                     buy parts of a whole share </p>
             </div>
-            <div class="body_item col-4">
-                <img src="./images/secure2.svg" alt="">
-                <h2>Access Private Equity</h2>
-                <p>Get access to investments typically reserved for institutions</p>
+            <div class="body__item col-4">
+                <img class="item__img" src="./images/secure/secure2.svg" alt="">
+                <h2 class="item__tite">Access Private Equity</h2>
+                <p class="item__text">Get access to investments typically reserved for institutions</p>
             </div>
-            <div class="body_item col-4">
-                <img src="./images/secure3.svg" alt="">
-                <h2>Trade 24/7</h2>
-                <p>Digital assets don’t sleep,
+            <div class="body__item col-4">
+                <img class="item__img" src="./images/secure/secure3.svg" alt="">
+                <h2 class="item__tite">Trade 24/7</h2>
+                <p class="item__text">Digital assets don’t sleep,
                     so why should you stop trading?</p>
             </div>
         </div>
-        <div class="securities_mail row">
+        <div class="securities__mail row">
             <form action="access">
-                <input class="col-xs-3" placeholder="E-mail*" type="text">
-                <button>Get Early Access</button>
+                <div class="form-group row align-items-center">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-3">
+                        <input type="text" class="access__input form-control" id="inputMail" placeholder="E-mail">
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="button-access button-shadow">Get Early Access</button>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
             </form>
         </div>
     </div>
-    <div class="wrapper_middle">
+    <div class="wrapper__block wrapper">
         <div class="container ">
             <div class="row">
                 <div class="col align-self-center">
-                    <p>
+                    <h2 class="block__title">
                         Digital Assets are the future of private equity - Deloitte
-                    </p>
+                    </h2>
                 </div>
             </div>
         </div>
     </div>
-    <div class="wrapper">
+    <div id="products" class="wrapper">
         <div class="container">
-            <div class="products row">
-                <div class="products_col ">
-                    <h1 class="">Products</h1>
+            <div class="products__row row">
+                <div class="products__col ">
+                    <h1 class="products__title">Products</h1>
                 </div>
             </div>
-            <div class="products row">
+            <div class="products__row row">
                 <div class="col-2"></div>
                 <div class="col-3 align-self-center">
-                    <div class="products">
-                        <h2 class="products_h2 ">Launchpad</h2>
-                        <p class="products_p">Help launch startups
-                            & fund private bussinesses</p>
-                        <h2 class="products_h2 products_h2-green">Marketplace</h2>
-                        <p class="products_p">Browse through stocks on sale from private investors</p>
+                    <div class="products-info">
+                        <h2 class="products-info__title">Launchpad</h2>
+                        <p class="products-info__text">Help launch startups
+                            & fund private businesses</p>
+                        <h2 class="products-info__title products__title-green">Marketplace</h2>
+                        <p class="products-info__text">Browse through stocks on sale from private investors</p>
                     </div>
                 </div>
                 <div class="col-2"></div>
                 <div class="col-3">
-                    <div class="products_img">
-                        <img src="./images/phone2.svg" alt="Phone">
+                    <div class="products__img">
+                        <img class="img-phone" src="./images/phone2.svg" alt="Phone">
                     </div>
                 </div>
                 <div class="col-2"></div>
             </div>
         </div>
     </div>
-    <div class="wrapper wrapper_business">
+    <div id="business" class="wrapper wrapper__business">
         <div class="container">
             <div class="business row">
-                <div class="business_col ">
-                    <h1 class="h1_header h1_header-business">Digitize Your Business</h1>
+                <div class="business__title">
+                    <h1 class="title title-business">Digitize Your Business</h1>
                 </div>
             </div>
-            <div class="business_row row">
-                <div class="buisness-col col-4">
-                    <div class="business_icon">
-                        <img src="images/business-icon1.svg" alt="Icon">
+            <div class="business__row row">
+                <div class="business__col col-4">
+                    <div class="business__icon">
+                        <img src="images/business/business-icon1.svg" alt="Icon">
                     </div>
-                    <div class="business_info">
-                        <p class="buisness__block-text_bold">Raise Capital</p>
-                        <p class="buisness__block-text">Expand your investor base
+                    <div class="business__info">
+                        <p class="info__title">Raise Capital</p>
+                        <p class="info__text">Expand your investor base
                             globally through the Equitees launchpad</p>
                     </div>
                 </div>
-                <div class="buisness-col col-4">
-                    <div class="business_icon">
-                        <img src="images/business-icon2.svg" alt="Icon">
+                <div class="business__col col-4">
+                    <div class="business__icon">
+                        <img src="images/business/business-icon2.svg" alt="Icon">
                     </div>
-                    <div class="business_info">
-                        <p class="buisness__block-text_bold">Automated Compliance</p>
-                        <p class="buisness__block-text">Regulation aware shares means less time on the phone with your
+                    <div class="business__info">
+                        <p class="info__title">Automated Compliance</p>
+                        <p class="info__text">Regulation aware shares means less time on the phone with your
                             lawyers</p>
                     </div>
                 </div>
-                <div class="buisness-col col-4">
-                    <div class="business_icon">
-                        <img src="images/business-icon3.svg" alt="Icon">
+                <div class="business__col col-4">
+                    <div class="business__icon">
+                        <img src="images/business/business-icon3.svg" alt="Icon">
                     </div>
-                    <div class="business_info">
-                        <p class="buisness__block-text_bold">Digital Transfer Agent</p>
-                        <p class="buisness__block-text">Everything from shareholder , managment, voting, even dividend
+                    <div class="business__info">
+                        <p class="info__title">Digital Transfer Agent</p>
+                        <p class="info__text">Everything from shareholder , managment, voting, even dividend
                             distribution</p>
                     </div>
                 </div>
             </div>
-            <div class="business_row row">
-                <div class="buisness-col col-4">
-                    <div class="business_icon">
-                        <img src="images/business-icon4.svg" alt="Icon">
+            <div class="business__row row">
+                <div class="business__col col-4">
+                    <div class="business__icon">
+                        <img src="images/business/business-icon4.svg" alt="Icon">
                     </div>
-                    <div class="business_info">
-                        <p class="buisness__block-text_bold">Lower Fees</p>
-                        <p class="buisness__block-text">Removing unnecesary middlemen helps keep more money in your
+                    <div class="business__info">
+                        <p class="info__title">Lower Fees</p>
+                        <p class="info__text">Removing unnecesary middlemen helps keep more money in your
                             business</p>
                     </div>
                 </div>
-                <div class="buisness-col col-4">
-                    <div class="business_icon">
-                        <img src="images/business-icon5.svg" alt="Icon">
+                <div class="business__col col-4">
+                    <div class="business__icon">
+                        <img src="images/business/business-icon5.svg" alt="Icon">
                     </div>
-                    <div class="business_info">
-                        <p class="buisness__block-text_bold">Brand Engagement</p>
-                        <p class="buisness__block-text">Increase your customer engagement by rewardind your most loyal
+                    <div class="business__info">
+                        <p class="info__title">Brand Engagement</p>
+                        <p class="info__text">Increase your customer engagement by rewardind your most loyal
                             patrons</p>
                     </div>
                 </div>
-                <div class="buisness-col col-4">
-                    <div class="business_icon">
-                        <img src="images/business-icon6.svg" alt="Icon">
+                <div class="business__col col-4">
+                    <div class="business__icon">
+                        <img src="images/business/business-icon6.svg" alt="Icon">
                     </div>
-                    <div class="business_info">
-                        <p class="buisness__block-text_bold">24/7 Liquidity</p>
-                        <p class="buisness__block-text">Sacondary trading is hard, we make it easy though the Equiteez
+                    <div class="business__info">
+                        <p class="info__title">24/7 Liquidity</p>
+                        <p class="info__text">Sacondary trading is hard, we make it easy though the Equiteez
                             Marketplace</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="wrapper wrapper_blog">
+    <div id="blog" class="wrapper wrapper__blog">
         <div class="container">
             <div class="blog row">
-                <div class="blog_col ">
-                    <h1 class="h1_header h1_header-blog">Blog</h1>
+                <div class="blog__title ">
+                    <h1 class="title">Blog</h1>
                 </div>
             </div>
-            <div class="blog_row row">
-                <div class="blog-col col-4">
-                    <div class="blog_icon">
-                        <img src="images/blog_png3.png" alt="Icon">
+            <div class="blog__row row">
+                <div class="blog__col col-4">
+                    <div class="blog__icon">
+                        <img src="images/blog/blog_png3.png" alt="Icon">
                     </div>
-                    <div class="blog_info">
+                    <div class="blog__info">
                         <p class="info__date">02.06.20</p>
                         <p class="info__text">In expression an solicitude principles in do. Small for ask shade water
                             manor think men begin. At principle perfectly by sweetness do.</p>
                     </div>
                 </div>
-                <div class="blog-col col-4">
-                    <div class="blog_icon">
-                        <img src="images/blog_png2.png" alt="Icon">
+                <div class="blog__col col-4">
+                    <div class="blog__icon">
+                        <img src="images/blog/blog_png2.png" alt="Icon">
                     </div>
-                    <div class="blog_info">
+                    <div class="blog__info">
                         <p class="info__date">02.06.20</p>
                         <p class="info__text">In expression an solicitude principles in do. Small for ask shade water
                             manor think men begin. At principle perfectly by sweetness do.</p>
                     </div>
                 </div>
-                <div class="blog-col col-4">
-                    <div class="blog_icon">
-                        <img src="images/blog_png1.png" alt="Icon">
+                <div class="blog__col col-4">
+                    <div class="blog__icon">
+                        <img src="images/blog/blog_png1.png" alt="Icon">
                     </div>
-                    <div class="blog_info">
+                    <div class="blog__info">
                         <p class="info__date">02.06.20</p>
                         <p class="info__text">In expression an solicitude principles in do. Small for ask shade water
                             manor think men begin. At principle perfectly by sweetness do.</p>
@@ -231,27 +246,28 @@
                 </div>
             </div>
             <div class="row">
-                <div class="blog_col">
-                    <button class="blog_button">View all news</button>
+                <div class="blog__col">
+                    <div class="blog__button">
+                        <button class="button-news">View all news</button>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
-    <div class="wrapper wrapper_bottom ">
+    <div id="contact" class="wrapper wrapper__contact ">
         <div class="container">
-            <div class="contact_row row align-items-center">
-                <div class="contact_col col-5 ">
-                    <p class="contact_header">Contact Us</p>
-                    <p class="contact_text">For inquiries regarding events, projects, collaborations, or general
+            <div class="contact__row row align-items-center">
+                <div class="contact__col col-5 ">
+                    <p class="contact__title">Contact Us</p>
+                    <p class="contact__text text">For inquiries regarding events, projects, collaborations, or general
                         infhormation.
-                        <span class="contact_text-mail">
+                        <span class="contact__text-mail text">
                             info@equiteez.com </span>
                     </p>
                 </div>
-                <div class="blog_col col-6">
-                    <div>
-                        <form action="send">
+                <div class="blog__col col-6">
+                    <div class="blog__form">
+                        <form action="#">
                             <div class="form-group row">
                                 <label for="inputName" class="contact__form__label col-sm-2 col-form-label">Name</label>
                                 <div class="col-sm-10">
@@ -280,7 +296,9 @@
                                         placeholder="Message"></textarea>
                                 </div>
                             </div>
-                            <button class="contact_button">Send</button>
+                            <div class="contact__button">
+                                <button class="button button-contact">Send</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -288,31 +306,47 @@
             </div>
         </div>
     </div>
-    <footer class="wrapper wrapper_footer ">
+    <footer class="wrapper wrapper__footer">
         <div class="container">
-            <div class="row">
+            <div class="footer__row footer__row__top row align-items-center">
                 <div class="col-2">
                     <div class="footer__logo">
-                        <p>Equiteez</p>
-                        <p>Contact us</p>
+                        <p class="logo">Equiteez</p>
                     </div>
-                    <div class="footer_links ">
-                        <div class="links_item"> <img src="images/twitter.svg" alt="Twitter"></div>
-                        <div class="links_item"> <img src="images/facebook.svg" alt="Facebook"></div>
-                        <div class="links_item"> <img src="images/linkedin.svg" alt="LinkedIn"></div>
-                        <div class="links_item"> <img src="images/medium.svg" alt="Medium"></div>
+                    <div class="footer__contact">
+                        <a class="contact__link" href="#contact">Contact us</a>
+                    </div>
+                    <div class="footer__links ">
+                        <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                                    src="images/links/twitter.svg" alt="Twitter"></div></a>
+                        <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                                    src="images/links/facebook.svg" alt="Facebook"></div></a>
+                        <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                                    src="images/links/linkedin.svg" alt="LinkedIn"></div></a>
+                        <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                                    src="images/links/medium-black.svg" alt="Medium"></div></a>
                     </div>
                 </div>
                 <div class="col-1"></div>
                 <div class="col-3">
-                    <div class="footer__href">
-                        <a>What Are Digital Securities?</a>
-                        <a>Products</a>
-                        <a>Digitize Your Business</a>
-                        <a>Blog</a>
+                    <div class="footer__menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="#securities">What Are Digital
+                                    Securities?</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#products">Products</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#business">Digitize Your Business</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#blog">Blog</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-6"></div>
+            </div>
+            <hr class="footer__hr">
+            <div class="footer__row footer__row__bottom row align-items-center">
+                <div class="footer__rights">
+                    <p>©2020 Equiteez.All rights reserved.</p>
+                </div>
             </div>
         </div>
     </footer>

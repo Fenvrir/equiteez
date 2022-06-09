@@ -31,7 +31,7 @@ const scss = () => {
 };
 
 const img = () => {
-    return gulp.src('./src/images/*')
+    return gulp.src('./src/images/**/*')
     .pipe(imageMin({
         verbose: true
     }))
@@ -42,7 +42,7 @@ const img = () => {
 const watch = () => {
     gulp.watch('./src/*.html', html);
     gulp.watch('./src/sass/**/*.scss', scss);
-    gulp.watch('./src/images/*', img);
+    gulp.watch('./src/images/**/*', img);
 };
 
 exports.default = gulp.series(
