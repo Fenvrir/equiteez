@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <title>Equiteez</title>
 </head>
 
@@ -17,7 +18,7 @@
                     <span></span>
                 </div>
                 <div class="header__logo col-5 col-xl-2">
-                    <img class="logo__img" src="images/logo.svg" alt="Logo">
+                    <img loading="lazy" class="logo__img" src="images/logo.svg" alt="Logo">
                 </div>
                 <nav class="nav-menu col-xl-8">
                     <ul class="nav-menu__list">
@@ -30,13 +31,13 @@
                     </ul>
                 </nav>
                 <div class="header__links col-xl-2 ">
-                    <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                    <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="link__img"
                                 src="images/links/twitter.svg" alt="Twitter"></div></a>
-                    <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                    <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="link__img"
                                 src="images/links/facebook.svg" alt="Facebook"></div></a>
-                    <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                    <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="link__img"
                                 src="images/links/linkedin.svg" alt="LinkedIn"></div></a>
-                    <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                    <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="link__img"
                                 src="images/links/medium.svg" alt="Medium"></div></a>
                 </div>
                 <div class="menu__burger disable">
@@ -54,14 +55,13 @@
                             </ul>
                         </nav>
                         <div class="burger__links ">
-                            <div class="links__item"> <a href="" target="_blank"><img
-                                        class="burger__link__img check" src="images/links/twitter-burger.svg"
-                                        alt="Twitter"></div></a>
-                            <div class="links__item"> <a href="" target="_blank"><img class="burger__link__img"
+                            <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="burger__link__img check"
+                                        src="images/links/twitter-burger.svg" alt="Twitter"></div></a>
+                            <div class="links__item"> <a href="" target="_blank"><img loading="lazy"  class="burger__link__img"
                                         src="images/links/facebook-burger.svg" alt="Facebook"></div></a>
-                            <div class="links__item"> <a href="" target="_blank"><img class="burger__link__img"
+                            <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="burger__link__img"
                                         src="images/links/linkedin-burger.svg" alt="LinkedIn"></div></a>
-                            <div class="links__item"> <a href="" target="_blank"><img class="burger__link__img"
+                            <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="burger__link__img"
                                         src="images/links/medium-burger.svg" alt="Medium"></div></a>
                         </div>
                     </div>
@@ -75,19 +75,19 @@
                 <div class="private_col col-xl-6">
                     <h1 class="private__title">Private Equity Made Easy</h1>
                     <div class="private__img-mobile img__box">
-                        <img class="private-img-phone-mobile" src="./images/phone-mobile.svg" alt="Phone">
+                        <img loading="lazy" class="private-img-phone-mobile" src="./images/phone-mobile.svg" alt="Phone">
                     </div>
                     <div class="private-block__text">
                         <p class="private__text">Equiteez is on a mission to make private equity easily accesible to all
                             in
                             vestors</p>
                     </div>
-                    <button class="button-private button-shadow">Signup For Free</button>
+                    <button id="show-1" data-toggle="modal" class="show button-private button-shadow">Signup For Free</button>
                 </div>
                 <div class="col-xl-1"></div>
                 <div class="private__col col-xl-5">
                     <div class="private__img">
-                        <img class="private-img-phone" src="./images/phone.svg" alt="Phone">
+                        <img loading="lazy" class="private-img-phone" src="./images/phone.svg" alt="Phone">
                     </div>
                 </div>
             </div>
@@ -101,32 +101,32 @@
         </div>
         <div class="securities-body row">
             <div class="body__item col-12 col-xl-4">
-                <img class="item__img" src="./images/secure/secure1.svg" alt="">
+                <img loading="lazy" loading="lazy" class="item__img" src="./images/secure/secure1.svg" alt="">
                 <h2 class="item__titel">Invest Any Amount </h2>
                 <p class="item__text">Start with as little as $1,
                     buy parts of a whole share </p>
             </div>
             <div class="body__item col-12 col-xl-4">
-                <img class="item__img" src="./images/secure/secure2.svg" alt="">
+                <img loading="lazy" loading="lazy" class="item__img" src="./images/secure/secure2.svg" alt="">
                 <h2 class="item__titel">Access Private Equity</h2>
                 <p class="item__text">Get access to investments typically reserved for institutions</p>
             </div>
             <div class="body__item col-12 col-xl-4">
-                <img class="item__img" src="./images/secure/secure3.svg" alt="">
+                <img loading="lazy" class="item__img" src="./images/secure/secure3.svg" alt="">
                 <h2 class="item__titel">Trade 24/7</h2>
                 <p class="item__text">Digital assets don’t sleep,
                     so why should you stop trading?</p>
             </div>
         </div>
         <div class="securities__mail row ">
-            <form action="access">
+            <form action="#/">
                 <div class="form-group form-group-access row align-items-center justify-content-center">
                     <div class=" col-xl-3"></div>
                     <div class=" col-xl-3">
                         <input type="text" class="access__input form-control" id="inputMail" placeholder="E-mail">
                     </div>
                     <div class="col__access  col-xl-3">
-                        <button class="button-access button-shadow">Get Early Access</button>
+                        <button data-toggle="modal-success" class="button-access button-shadow">Get Early Access</button>
                     </div>
                     <div class=" col-xl-3"></div>
                 </div>
@@ -165,7 +165,7 @@
                 <div class="col-xl-2"></div>
                 <div class="col-12 col-xl-3 align-self-center">
                     <div class="products__img">
-                        <img class="img-phone" src="./images/phone2.svg" alt="Phone">
+                        <img loading="lazy" class="img-phone" src="./images/phone2.svg" alt="Phone">
                     </div>
                 </div>
                 <div class="col-xl-2"></div>
@@ -182,7 +182,7 @@
             <div class="business__row row justify-content-center">
                 <div class="business__col col-12 col-xl-4">
                     <div class="business__icon">
-                        <img src="images/business/business-icon1.svg" alt="Icon">
+                        <img loading="lazy" src="images/business/business-icon1.svg" alt="Icon">
                     </div>
                     <div class="business__info">
                         <p class="info__title">Raise Capital</p>
@@ -192,7 +192,7 @@
                 </div>
                 <div class="business__col col-12 col-xl-4">
                     <div class="business__icon">
-                        <img src="images/business/business-icon2.svg" alt="Icon">
+                        <img loading="lazy" src="images/business/business-icon2.svg" alt="Icon">
                     </div>
                     <div class="business__info">
                         <p class="info__title">Automated Compliance</p>
@@ -202,7 +202,7 @@
                 </div>
                 <div class="business__col col-12 col-xl-4">
                     <div class="business__icon">
-                        <img src="images/business/business-icon3.svg" alt="Icon">
+                        <img loading="lazy" src="images/business/business-icon3.svg" alt="Icon">
                     </div>
                     <div class="business__info">
                         <p class="info__title">Digital Transfer Agent</p>
@@ -214,7 +214,7 @@
             <div class="business__row row justify-content-center">
                 <div class="business__col col-12 col-xl-4">
                     <div class="business__icon">
-                        <img src="images/business/business-icon4.svg" alt="Icon">
+                        <img loading="lazy" src="images/business/business-icon4.svg" alt="Icon">
                     </div>
                     <div class="business__info">
                         <p class="info__title">Lower Fees</p>
@@ -224,7 +224,7 @@
                 </div>
                 <div class="business__col col-12 col-xl-4">
                     <div class="business__icon">
-                        <img src="images/business/business-icon5.svg" alt="Icon">
+                        <img loading="lazy" src="images/business/business-icon5.svg" alt="Icon">
                     </div>
                     <div class="business__info">
                         <p class="info__title">Brand Engagement</p>
@@ -234,7 +234,7 @@
                 </div>
                 <div class="business__col col-12 col-xl-4">
                     <div class="business__icon">
-                        <img src="images/business/business-icon6.svg" alt="Icon">
+                        <img loading="lazy" src="images/business/business-icon6.svg" alt="Icon">
                     </div>
                     <div class="business__info">
                         <p class="info__title">24/7 Liquidity</p>
@@ -255,7 +255,7 @@
             <div class="blog__row row justify-content-center">
                 <div class="blog__col col-11 col-xl-4">
                     <div class="blog__icon">
-                        <img class="blog__img" src="images/blog/blog_png3.png" alt="Icon">
+                        <img loading="lazy" class="blog__img" src="images/blog/blog_png3.png" alt="Icon">
                     </div>
                     <div class="blog__info">
                         <p class="blog__info__date">02.06.20</p>
@@ -266,7 +266,7 @@
                 </div>
                 <div class="blog__col col-11 col-xl-4">
                     <div class="blog__icon">
-                        <img class="blog__img" src="images/blog/blog_png2.png" alt="Icon">
+                        <img loading="lazy" class="blog__img" src="images/blog/blog_png2.png" alt="Icon">
                     </div>
                     <div class="blog__info">
                         <p class="blog__info__date">02.06.20</p>
@@ -277,7 +277,7 @@
                 </div>
                 <div class="blog__col col-11 col-xl-4">
                     <div class="blog__icon">
-                        <img class="blog__img" src="images/blog/blog_png1.png" alt="Icon">
+                        <img loading="lazy" class="blog__img" src="images/blog/blog_png1.png" alt="Icon">
                     </div>
                     <div class="blog__info">
                         <p class="blog__info__date">02.06.20</p>
@@ -309,7 +309,7 @@
                 </div>
                 <div class="contact__col col-12 col-xl-6">
                     <div class="contact__form">
-                        <form action="#">
+                        <form action="/send/">
                             <div class="form-group row justify-content-center">
                                 <label for="inputName"
                                     class="contact__form__label col-11 col-xl-2 col-form-label">Name</label>
@@ -359,13 +359,13 @@
                     <div class="footer__contact">
                         <a class="contact__link" href="#contact">Contact us</a>
                         <div class="footer__links ">
-                            <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                            <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="link__img"
                                         src="images/links/twitter.svg" alt="Twitter"></div></a>
-                            <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                            <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="link__img"
                                         src="images/links/facebook.svg" alt="Facebook"></div></a>
-                            <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                            <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="link__img"
                                         src="images/links/linkedin.svg" alt="LinkedIn"></div></a>
-                            <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                            <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="link__img"
                                         src="images/links/medium-black.svg" alt="Medium"></div></a>
                         </div>
                     </div>
@@ -385,13 +385,13 @@
                 <div class="footer__contact-mobile">
                     <a class="contact__link" href="#contact">Contact us</a>
                     <div class="footer__links ">
-                        <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                        <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="link__img"
                                     src="images/links/twitter.svg" alt="Twitter"></div></a>
-                        <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                        <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="link__img"
                                     src="images/links/facebook.svg" alt="Facebook"></div></a>
-                        <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                        <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="link__img"
                                     src="images/links/linkedin.svg" alt="LinkedIn"></div></a>
-                        <div class="links__item"> <a href="" target="_blank"><img class="link__img"
+                        <div class="links__item"> <a href="" target="_blank"><img loading="lazy" class="link__img"
                                     src="images/links/medium-black.svg" alt="Medium"></div></a>
                     </div>
                 </div>
@@ -405,8 +405,8 @@
             </div>
         </div>
     </footer>
-
     <script src="./js/scripts.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

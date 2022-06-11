@@ -27,7 +27,7 @@ const html = () => {
 const scss = () => {
     return gulp.src('./src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./public'))
+    .pipe(gulp.dest('./public/css'))
     .pipe(browserSync.stream());
 };
 

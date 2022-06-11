@@ -5335,6 +5335,7 @@ body {
   color: #000;
 }
 
+.col-5,
 .col-2,
 .col-3,
 .col-6,
@@ -5345,6 +5346,10 @@ body {
 .col-12,
 .col-xl-3 .col-xl-4 {
   padding: 0;
+}
+
+.col-sm-2 {
+  padding-right: 0;
 }
 
 .col-xl-10 {
@@ -5534,7 +5539,7 @@ body {
 .private-img-phone {
   width: 650px;
   height: 706px;
-  margin-left: -75px;
+  margin-left: -80px;
 }
 
 .securities-head {
@@ -6144,12 +6149,12 @@ body {
     line-height: 48px;
   }
   .contact__col-header {
-    width: 334px;
+    width: 330px;
     margin: 0 auto;
   }
   .form-group {
     margin: 0;
-    width: 360px;
+    width: 100%;
   }
   .contact__text,
 .contact__text-mail {
